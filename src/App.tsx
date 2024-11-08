@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p>Teste2</p>
+      <p>Teste12</p>
     </>
   )
 }
