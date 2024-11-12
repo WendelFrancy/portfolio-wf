@@ -1,10 +1,11 @@
-import './App.css'
+import Navbar from "./components/menu/Navbar.jsx"
 
 function App() {
 
   return (
     <>
-      <p>Teste12</p>
+    <Navbar texto={'teste'} />
+    <p>Teste123</p>
     </>
   )
 }
