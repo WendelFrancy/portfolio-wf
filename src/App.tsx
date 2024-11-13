@@ -4,8 +4,11 @@ function App() {
 
   return (
     <>
-    <Navbar texto={'teste'} />
-    <p>Teste123</p>
+    <Navbar conteudoCor={'blue'} />
+    <Navbar conteudoCor={'red'} />
+    <Navbar conteudoCor={'green'} />
+    <Navbar conteudoCor={'purple'} />
+    <Navbar conteudoCor={'brown'} />
     </>
   )
 }
