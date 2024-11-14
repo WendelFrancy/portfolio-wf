@@ -6,8 +6,6 @@ function App() {
     <>
     <Navbar conteudoCor={'blue'} />
     <Navbar conteudoCor={'red'} />
-    <Navbar conteudoCor={'green'} />
-    <Navbar conteudoCor={'purple'} />
     <Navbar conteudoCor={'brown'} />
     </>
   )

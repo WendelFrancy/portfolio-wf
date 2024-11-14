@@ -9,7 +9,6 @@ const Navbar = ({ conteudoCor }) => {
             <button onClick={() => {setTexto('Mudei  estado')}}>Alterar o texto</button>
         </>
     );
-
 }
 
 export default Navbar
