@@ -1,12 +1,13 @@
 import { useState } from "react";
+import CriarBtn from "./CriarBtn";
 
-const Navbar = ({ conteudoCor }) => {
-    const [texto, setTexto] = useState("Testando")
-
+const Navbar = ({ corbotao }) => {
+    //const [texto, setTexto] = useState("Testando") - É assim que se declara um useState. OBS: Importante lembrar de importar.
     return (
         <>
-            <h1 style={{ color: conteudoCor }}>{texto}</h1>
-            <button onClick={() => {setTexto('Mudei  estado')}}>Alterar o texto</button>
+            <button onClick={CriarBtn}>
+                Criar Botao
+            </button>
         </>
     );
 }

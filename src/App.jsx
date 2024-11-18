@@ -4,9 +4,9 @@ function App() {
 
   return (
     <>
-    <Navbar conteudoCor={'blue'} />
-    <Navbar conteudoCor={'red'} />
-    <Navbar conteudoCor={'brown'} />
+      <div id="menudiv">
+        <Navbar corbotao = 'blue'/>
+      </div>
     </>
   )
 }
