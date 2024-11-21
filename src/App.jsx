@@ -1,10 +1,10 @@
-import Navbar from "./components/menu/Navbar.jsx"
+import Options from "./components/menu/Options.jsx"
 
 function App() {
   let botaoexcluido = document.querySelectorAll('botaozin')
   return (
     <>
-      <Navbar />
+      <Options />
       <div id="menudiv">
 
       </div>
