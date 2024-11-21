@@ -14,7 +14,6 @@ function removerBtn() {
         botaoexcluido[0].remove()
     } else {
         console.log('não tem botão cadastrado')
-        console.log(botaoexcluido)
     }
 }
 
