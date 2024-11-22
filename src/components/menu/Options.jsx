@@ -1,9 +1,11 @@
 import { useState } from "react";
 import BtnsOptions from "./BtnsOptions.jsx";
+import TesteInput from "./TesteInput.jsx";
 
 function criarBtn() {
     const botaoteste = document.createElement("button")
-    botaoteste.innerText = "teste"
+    const nomeBotao = document.getElementById('nomeBotao').value
+    botaoteste.innerText = `${nomeBotao}` 
     botaoteste.className = "botaozin"
     menudiv.appendChild(botaoteste)
 }
@@ -21,6 +23,7 @@ const Options = () => {
     //const [texto, setTexto] = useState("Testando") - É assim que se declara um useState. OBS: Importante lembrar de importar.
     return (
         <>
+            <TesteInput/>
             <BtnsOptions 
             idBtn={'criar'} 
             contentBtn={'Criar um botão de teste'}
