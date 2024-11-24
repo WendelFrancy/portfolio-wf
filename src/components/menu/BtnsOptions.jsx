@@ -1,12 +1,12 @@
-import App from '/src/App.jsx'
-import Options from './Options';
+import { StsOptions } from './StsMenu';
+
 
 
 const BtnsOptions = ({ idBtn, contentBtn, typeBtn }) => {
     return <>
-        <button id={idBtn} onClick={typeBtn}>
+        <StsOptions id={idBtn} onClick={typeBtn}>
             {contentBtn}
-        </button>
+        </StsOptions>
     </>
 }
 

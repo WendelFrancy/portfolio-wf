@@ -1,13 +1,17 @@
-import { useState } from "react";
 import BtnsOptions from "./BtnsOptions.jsx";
 import TesteInput from "./TesteInput.jsx";
 
 function criarBtn() {
     const botaoteste = document.createElement("button")
     const nomeBotao = document.getElementById('nomeBotao').value
-    botaoteste.innerText = `${nomeBotao}` 
     botaoteste.className = "botaozin"
-    menudiv.appendChild(botaoteste)
+    botaoteste.innerText = `${nomeBotao}` 
+
+    botaoteste.style.padding = '1rem';
+
+    if (botaoteste.innerHTML !== "") {
+        return menudiv.appendChild(botaoteste)
+    } 
 }
 
 function removerBtn() {

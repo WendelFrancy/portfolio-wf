@@ -1,13 +1,20 @@
 import Options from "./components/menu/Options.jsx"
+import { MainDiv } from "./components/menu/StsMenu.js"
+import { TopMenu } from "./components/menu/StsMenu.js"
+import { StyledMenuDiv } from "./components/menu/StsMenu.js"
 
 function App() {
-  let botaoexcluido = document.querySelectorAll('botaozin')
+
   return (
     <>
-      <Options />
-      <div id="menudiv">
+    <MainDiv>
+      <TopMenu>
+        <Options />
+      <StyledMenuDiv id="menudiv">
 
-      </div>
+      </StyledMenuDiv>
+      </TopMenu>
+    </MainDiv>
     </>
   )
 }
