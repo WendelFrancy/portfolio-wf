@@ -1,17 +1,16 @@
 import BtnsOptions from "./BtnsOptions.jsx";
-import TesteInput from "./TesteInput.jsx";
+import CardForm from "./CardForm.jsx";
 
 function criarBtn() {
-    const botaoteste = document.createElement("button")
-    const nomeBotao = document.getElementById('nomeBotao').value
-    botaoteste.className = "botaozin"
-    botaoteste.innerText = `${nomeBotao}` 
+    const botaoteste = document.createElement('button');
+    botaoteste.className = 'botaozin';
+    botaoteste.innerHTML = 'teste'
 
     botaoteste.style.padding = '1rem';
 
     if (botaoteste.innerHTML !== "") {
         return menudiv.appendChild(botaoteste)
-    } 
+    }
 }
 
 function removerBtn() {
@@ -23,24 +22,21 @@ function removerBtn() {
     }
 }
 
-const Options = () => {
+const AppMenu = () => {
     //const [texto, setTexto] = useState("Testando") - É assim que se declara um useState. OBS: Importante lembrar de importar.
     return (
         <>
-            <TesteInput/>
-            <BtnsOptions 
-            idBtn={'criar'} 
-            contentBtn={'Criar um botão de teste'}
-            typeBtn={criarBtn}
+            <CardForm />
+            <BtnsOptions
+                contentBtn={'Criar um Cartão'}
+                typeBtn={criarBtn}
             />
-            <BtnsOptions 
-            idBtn={'remover'} 
-            contentBtn={'Remover um botão de teste'}
-            typeBtn={removerBtn}
+            <BtnsOptions
+                contentBtn={'Remover um Cartão'}
+                typeBtn={removerBtn}
             />
         </>
     );
 }
 
-
-export default Options
+export default AppMenu

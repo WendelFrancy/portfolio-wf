@@ -1,7 +1,5 @@
-import Options from "./components/menu/Options.jsx"
-import { MainDiv } from "./components/menu/StsMenu.js"
-import { TopMenu } from "./components/menu/StsMenu.js"
-import { StyledMenuDiv } from "./components/menu/StsMenu.js"
+import AppMenu from "./components/menu/AppMenu.jsx"
+import { MainDiv, TopMenu, StyledMenuDiv } from "./components/menu/StsMenu.js"
 
 function App() {
 
@@ -9,7 +7,7 @@ function App() {
     <>
     <MainDiv>
       <TopMenu>
-        <Options />
+        <AppMenu />
       <StyledMenuDiv id="menudiv">
 
       </StyledMenuDiv>

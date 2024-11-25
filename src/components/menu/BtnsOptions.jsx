@@ -1,14 +1,13 @@
-import { StsOptions } from './StsMenu';
+import { StsOptions, ContOptions } from './StsMenu';
 
-
-
-const BtnsOptions = ({ idBtn, contentBtn, typeBtn }) => {
+const BtnsOptions = ({ contentBtn, typeBtn }) => {
     return <>
-        <StsOptions id={idBtn} onClick={typeBtn}>
-            {contentBtn}
-        </StsOptions>
+        <ContOptions>
+            <StsOptions id="tipoCardapio" onClick={typeBtn}>
+                {contentBtn}
+            </StsOptions>
+        </ContOptions>
     </>
 }
-
 
 export default BtnsOptions
