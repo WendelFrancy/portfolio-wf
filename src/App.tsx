@@ -1,5 +1,5 @@
-import AppMenu from "./components/menu/AppMenu.jsx"
-import { MainDiv, TopMenu, StyledMenuDiv } from "./components/menu/StsMenu.js"
+import AppMenu from './components/menu/AppMenu.tsx'
+import { MainDiv, TopMenu, StyledMenuDiv } from './components/menu/StsMenu.ts'
 
 function App() {
 

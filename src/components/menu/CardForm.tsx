@@ -1,18 +1,17 @@
-import "./StsMenu.js"
-import { CardInput, StyledForm } from "./StsMenu.js"
+import { CardInput, StyledForm } from './StsMenu.ts'
 
 const CardForm = () => {
     return (
         <>
             <StyledForm>
                 <CardInput
-                    $type='text'
+                    type='text'
                 />
                 <CardInput
-                    $type='text'
+                    type='text'
                 />
                 <CardInput
-                    $type='number'
+                    type='number'
                 />
             </StyledForm>
         </>

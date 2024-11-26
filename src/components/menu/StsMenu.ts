@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { HTMLInputTypeAttribute } from 'react';
+import styled from 'styled-components';
 
 export const MainDiv = styled.main`
     padding: 0; 
@@ -35,7 +36,11 @@ export const StsOptions = styled.button`
     width: 15rem;
   `;
 
-export const CardInput = styled.input.attrs((props) => ({ type: props.$type || 'text', }))`
+interface CardInputProps {
+  type: React.HTMLInputTypeAttribute;
+}
+
+export const CardInput = styled.input.attrs((props: CardInputProps) => ({type: props.type,}))`
     padding: 1rem;
 `;
 

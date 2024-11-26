@@ -1,10 +1,10 @@
-import BtnsOptions from "./BtnsOptions.jsx";
-import CardForm from "./CardForm.jsx";
+import BtnsOptions from './BtnsOptions.tsx';
+import CardForm from './CardForm.tsx';
 
 function criarBtn() {
     const botaoteste = document.createElement('button');
     botaoteste.className = 'botaozin';
-    botaoteste.innerHTML = 'teste'
+    botaoteste.innerHTML = 'teste';
 
     botaoteste.style.padding = '1rem';
 
@@ -28,11 +28,11 @@ const AppMenu = () => {
         <>
             <CardForm />
             <BtnsOptions
-                contentBtn={'Criar um Cartão'}
+                contentBtn={"Criar um Cartão"}
                 typeBtn={criarBtn}
             />
             <BtnsOptions
-                contentBtn={'Remover um Cartão'}
+                contentBtn={"Remover um Cartão"}
                 typeBtn={removerBtn}
             />
         </>
