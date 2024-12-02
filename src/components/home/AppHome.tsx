@@ -10,9 +10,16 @@ const AppHome = () => {
             if(hidden.current){
                 hidden.current.style.transition = '2s';
                 hidden.current.style.transform = 'translateX(-300px)';
+                hidden.current?.addEventListener('transitionend', () => {
+                    hidden.current?.remove();
+                });
+                hidden.current?.removeEventListener('transitionend', () => {
+                    hidden.current?.remove();
+                });
             } else {
                 console.log('não puxou')
             }
+
         },[])
         
       
