@@ -8,10 +8,10 @@ export const BgHome = styled.div`
 `;
 
 export const TextHide = styled.div`
-    //position: absolute;
+    position: absolute;
     height: 3rem;
     width: 20rem;
-    background-color: brown;
+    background-color: white;
 `;
 
 export const HomeWelcome = styled.h1`
