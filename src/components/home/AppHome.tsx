@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { BgHome, HomeWelcome, TextHide } from "./StsHome";
+import { NextBtn } from "../GlobalStyle";
 
 
 const AppHome = () => {
@@ -8,8 +9,8 @@ const AppHome = () => {
 
         useEffect (() => {
             if(hidden.current){
-                hidden.current.style.transition = '2s';
-                hidden.current.style.transform = 'translateX(-300px)';
+                hidden.current.style.transition = '2.5s';
+                hidden.current.style.transform = 'translateX(-850px)';
                 hidden.current?.addEventListener('transitionend', () => {
                     hidden.current?.remove();
                 });
@@ -33,6 +34,7 @@ const AppHome = () => {
                 <HomeWelcome
                 id='hometext'
                 >Olá! Seja bem vindo</HomeWelcome>
+                <NextBtn/>
             </BgHome>
         </>
     )
