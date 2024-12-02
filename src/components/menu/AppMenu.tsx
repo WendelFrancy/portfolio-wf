@@ -1,14 +1,14 @@
 import { LogoMenu, MainMenu, OptionsMenu, OptionsMenuContainer } from './StsMenu.ts'
 
-
 const AppMenu: () => JSX.Element = () => {
 
 
     return (<>
         <MainMenu>
-            <LogoMenu />
+            <LogoMenu 
+            src="src\assets\warrow.png"
+            />
             <OptionsMenuContainer>
-                <OptionsMenu>Home</OptionsMenu>
                 <OptionsMenu>Quem sou</OptionsMenu>
                 <OptionsMenu>Habilidades</OptionsMenu>
                 <OptionsMenu>Projetos</OptionsMenu>

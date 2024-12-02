@@ -3,20 +3,20 @@ import styled from 'styled-components';
 
 export const MainMenu = styled.section`
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-    justify-content: space-evenly;
+    left: 10%;
+    width: 80%;
+    justify-content: space-around;
     align-items: center;
-    box-shadow: 2px -6px 10px black;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 15%);
     height: 20vh;
-    width: 100%;
     border-radius: 0 0 20px 20px;
 `;
 
 export const LogoMenu = styled.img`
-height: 5rem;
-width: 5rem;
+    height: 3rem;
+    width: 4rem;
 `;
 
 export const OptionsMenuContainer = styled.div`
@@ -27,13 +27,13 @@ export const OptionsMenuContainer = styled.div`
 
 export const OptionsMenu = styled.button`
     height: 100%;
-    width: 100%;
     width: 7rem;
     background-color: unset;
     border: none;
+    transition: .1s linear;
     &:hover {
         cursor: pointer;
-        background-color: rgba(255, 255, 255, 80%);
+        font-size: .87rem;
     }
 `;
 

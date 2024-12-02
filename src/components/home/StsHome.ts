@@ -1,7 +1,21 @@
 import styled from "styled-components";
 
 export const BgHome = styled.div`
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: rgba(230, 252, 255, 60%);
+`;
+
+export const TextHide = styled.div`
+    //position: absolute;
+    height: 3rem;
+    width: 20rem;
+    background-color: brown;
+`;
+
+export const HomeWelcome = styled.h1`
+    font-size: 2rem;
+    font-weight: 600;
+    color: #55AD9B; 
 `;
