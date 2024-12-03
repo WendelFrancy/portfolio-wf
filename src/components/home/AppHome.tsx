@@ -1,20 +1,23 @@
-import { useEffect, useRef } from "react";
 import { BgHome, HomeWelcome } from "./StsHome";
-import { NextBtn } from "../GlobalStyle";
+import { ClickText, ContainerNextBtn, NextBtn } from "../GlobalStyle";
 
 
 const AppHome = () => {
-        
+
     return (
         <>
             <BgHome>
 
                 <HomeWelcome
-                id='hometext'
+                    id='hometext'
                 >Olá! Seja bem vindo</HomeWelcome>
-                <NextBtn 
-                src="src\assets\seta-para-baixo.png"
-                />
+                <ContainerNextBtn>
+                    <ClickText><strong>*</strong> Click to continue</ClickText>
+                    <NextBtn
+                        src="src\assets\seta-para-baixo.png"
+                        onClick={() => { console.log('teste') }}
+                    />
+                </ContainerNextBtn>
             </BgHome>
         </>
     )

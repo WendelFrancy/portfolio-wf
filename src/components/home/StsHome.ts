@@ -17,7 +17,7 @@ export const TextHide = styled.div`
     background-color: black;
 `;
 
-/*Animação para o text reveal na Home Page*/
+/*Animação para o text reveal na Home Page - Usado no Component HomeWelcome*/
 const textSlide = keyframes` 
     from {
         width: 100%;
