@@ -30,10 +30,11 @@ export const OptionsMenu = styled.button`
     width: 7rem;
     background-color: unset;
     border: none;
+    font-size: 1rem;
     transition: .1s linear;
     &:hover {
         cursor: pointer;
-        font-size: .87rem;
+        font-size: 1.1rem;
     }
 `;
 
