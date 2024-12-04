@@ -1,5 +1,5 @@
 import { BgHome, HomeWelcome } from "./StsHome";
-import { ClickText, ContainerNextBtn, NextBtn } from "../GlobalStyle";
+/*import { ClickText, ContainerNextBtn, NextBtn } from "../GlobalStyle";*/
 
 
 const AppHome = () => {
@@ -7,10 +7,10 @@ const AppHome = () => {
     return (
         <>
             <BgHome>
-
                 <HomeWelcome
                     id='hometext'
                 >Olá! Seja bem vindo</HomeWelcome>
+                {/*
                 <ContainerNextBtn>
                     <ClickText><strong>*</strong> Click to continue</ClickText>
                     <NextBtn
@@ -18,6 +18,7 @@ const AppHome = () => {
                         onClick={() => { console.log('teste') }}
                     />
                 </ContainerNextBtn>
+                */}
             </BgHome>
         </>
     )

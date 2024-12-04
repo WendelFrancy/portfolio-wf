@@ -7,8 +7,7 @@ export const ContainerNextBtn = styled.div`
 `;
 
 export const NextBtn = styled.img`
-    padding-top: 20px;
-    height: 4rem;
+    height: 3rem;
     width: 4rem;
     margin-bottom: 2rem;
     &:hover {
@@ -29,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0; 
     padding: 0;
     text-decoration: none;
-    font-family: 1rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     }
 

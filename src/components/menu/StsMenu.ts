@@ -9,7 +9,6 @@ export const MainMenu = styled.section`
     width: 80%;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 15%);
     height: 20vh;
     border-radius: 0 0 20px 20px;
 `;
