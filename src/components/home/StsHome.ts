@@ -10,11 +10,17 @@ export const BgHome = styled.div`
 
 /*Animação para o text reveal na Home Page - Usado no Component HomeWelcome*/
 const textSlide = keyframes` 
-    from {
+    0% {
         width: 100%;
     }
-    to {
+    40% {
         width: 0%;
+    }
+    70%{
+        width: 0%;
+    }    
+    90% {
+        width: 100%;
     }
 `;
 
@@ -27,11 +33,26 @@ export const HomeWelcome = styled.h1`
         z-index: 1;
         position: absolute;
         content: '';
+        border-right: 2px solid black;
         background-color: white;
         width: 100%;
         height: 100%;
-        animation: ${textSlide} 2s;
+        animation: ${textSlide} 8s ease-in-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
+`;
+
+
+/* TO DO (CREATE THE ANIMATION TO SLIDE UP(LEFT) AND DOWN (RIGHT) CLEANING THE ENTIRE PAGE AND ENTERING
+    NEW INFORMATIONS. THE RIGHT SIDE WILL HAVE A PICTURE AND THE LEFT THE INFORMATIONS ABOUT THE PIC. 
+    
+    WHAT IF I CUT IN OTHERS WAYS? LIKE TOP(RIGHT TO LEFT) AND DOWN(LEFT TO RIGHT) AND BEFORE CUT
+    LEFT(DOWN TO TOP) AND RIGHT(TOP TO DOWN), IT MIGHT BE A GREAT ANIMATION.
+    */
+
+export const TopDownSlideCut = styled.div`
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 `;

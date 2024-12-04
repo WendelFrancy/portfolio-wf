@@ -9,7 +9,7 @@ const AppHome = () => {
             <BgHome>
                 <HomeWelcome
                     id='hometext'
-                >Olá! Seja bem vindo</HomeWelcome>
+                >Olá! Seja bem-vindo</HomeWelcome>
                 {/*
                 <ContainerNextBtn>
                     <ClickText><strong>*</strong> Click to continue</ClickText>
