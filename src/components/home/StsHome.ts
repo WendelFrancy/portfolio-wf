@@ -51,7 +51,9 @@ export const HomeWelcome = styled.h1`
     LEFT(DOWN TO TOP) AND RIGHT(TOP TO DOWN), IT MIGHT BE A GREAT ANIMATION.
     */
 
-export const TopDownSlideCut = styled.div`
+
+
+export const TransitionAnm = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
 
