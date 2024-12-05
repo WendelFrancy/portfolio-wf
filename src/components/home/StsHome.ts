@@ -53,8 +53,25 @@ export const HomeWelcome = styled.h1`
 
 
 
-export const TransitionAnm = styled.div`
+export const TransitionAnmContainer = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
+`;
 
+export const TransitionAnmLeft = styled.div`
+    position: absolute;
+    down: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+`;
+
+export const TransitionAnmRight = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background-color: black;
 `;
