@@ -1,11 +1,35 @@
 import styled, { keyframes } from "styled-components";
 
+const divTransition = keyframes` 
+    0% {
+        width: 100%;
+    }
+    20% {
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }    
+    70% {
+        width: 100%;
+    }
+`;
+
 export const BgHome = styled.div`
     display: grid;
-    grid-template-rows: 60% 40%;
-    align-items: end;
+    position: relative;
+    place-items: center;
     justify-items: center;
     height: 100vh;
+    &:before {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        animation: ${divTransition} 5s ease-in-out;
+    }
 `;
 
 /*Animação para o text reveal na Home Page - Usado no Component HomeWelcome*/
@@ -13,13 +37,13 @@ const textSlide = keyframes`
     0% {
         width: 100%;
     }
-    40% {
+    20% {
         width: 0%;
     }
-    70%{
+    50%{
         width: 0%;
     }    
-    90% {
+    70% {
         width: 100%;
     }
 `;
@@ -37,7 +61,7 @@ export const HomeWelcome = styled.h1`
         background-color: white;
         width: 100%;
         height: 100%;
-        animation: ${textSlide} 8s ease-in-out;
+        animation: ${textSlide} 7s ease-in-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -53,25 +77,4 @@ export const HomeWelcome = styled.h1`
 
 
 
-export const TransitionAnmContainer = styled.div`
-    display: grid;
-    grid-template-columns: 50% 50%;
-`;
 
-export const TransitionAnmLeft = styled.div`
-    position: absolute;
-    down: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    background-color: black;
-`;
-
-export const TransitionAnmRight = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50%;
-    width: 100%;
-    background-color: black;
-`;
