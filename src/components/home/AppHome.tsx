@@ -1,24 +1,20 @@
+import { color } from "motion/react";
 import { BgHome, HomeWelcome } from "./StsHome";
-/*import { ClickText, ContainerNextBtn, NextBtn } from "../GlobalStyle";*/
-
 
 const AppHome = () => {
 
     return (
         <>
-            <BgHome>
+            <BgHome
+            initial={{}}
+            >
                 <HomeWelcome
                     id='hometext'
-                >Olá! Seja bem-vindo</HomeWelcome>
-                {/*
-                <ContainerNextBtn>
-                    <ClickText><strong>*</strong> Click to continue</ClickText>
-                    <NextBtn
-                        src="src\assets\seta-para-baixo.png"
-                        onClick={() => { console.log('teste') }}
-                    />
-                </ContainerNextBtn>
-                */}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 2 }}
+                >Olá! Seja bem-vindo</HomeWelcome>              
+
             </BgHome>
         </>
     )
