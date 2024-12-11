@@ -1,4 +1,3 @@
-import { color } from "motion/react";
 import { BgHome, HomeWelcome } from "./StsHome";
 
 const AppHome = () => {
